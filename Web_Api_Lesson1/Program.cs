@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-string connectionStr = builder.Configuration.GetConnectionString("LocalDb");
+string connectionStr = builder.Configuration.GetConnectionString("AzureDb");
 builder.Services.AddDbContext<ShopDbContext>(options => options.UseSqlServer(connectionStr));
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()

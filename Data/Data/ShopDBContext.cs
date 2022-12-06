@@ -10,12 +10,12 @@ namespace Data
         public ShopDbContext() { }
         public ShopDbContext(DbContextOptions options) : base(options) { }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-
-        //    optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MonitorsApiDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        //}
+   //     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+   //     {
+   //         base.OnConfiguring(optionsBuilder);
+   //         string connStr = "Server=tcp:testserver121212.database.windows.net,1433;Initial Catalog=monitors_db;Persist Security Info=False;User ID=CloudSAdc4edef1;Password=GEnius29012017;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+			//optionsBuilder.UseSqlServer(connStr);
+   //     }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
