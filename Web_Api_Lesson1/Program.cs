@@ -41,6 +41,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(
+    builder => builder
+    .WithOrigins("http://localhost:4200/")
+    .SetIsOriginAllowedToAllowWildcardSubdomains()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    );
+
 app.UseAuthorization();
 
 app.MapControllers();
