@@ -43,7 +43,7 @@ app.UseHttpsRedirection();
 
 app.UseCors(
     builder => builder
-    .WithOrigins("http://localhost:4200/")
+    .WithOrigins("http://localhost:4200")
     .SetIsOriginAllowedToAllowWildcardSubdomains()
     .AllowAnyMethod()
     .AllowAnyHeader()
