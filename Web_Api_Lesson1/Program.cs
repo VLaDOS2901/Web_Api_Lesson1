@@ -43,7 +43,7 @@ app.UseHttpsRedirection();
 
 app.UseCors(
     builder => builder
-    .WithOrigins("http://localhost:4200", "https://white-river-0e32dd810.2.azurestaticapps.net/")
+    .WithOrigins("http://localhost:4200", "https://white-river-0e32dd810.2.azurestaticapps.net")
     .SetIsOriginAllowedToAllowWildcardSubdomains()
     .AllowAnyMethod()
     .AllowAnyHeader()
